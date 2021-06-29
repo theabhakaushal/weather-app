@@ -1,0 +1,9 @@
+<mat-toolbar>
+    <div class="input-div-wrapper">
+        <div class="input-div">
+        <input class="text-input" [(ngModel)]="searchValue"/>
+        <button class="search-button" mat-raised-button color="primary" (click)="emitSearchText()">Search</button>
+        <!-- <button class="searchButton" (click)="emitSearchText()">Search</button> -->
+        </div>
+    </div>
+</mat-toolbar>

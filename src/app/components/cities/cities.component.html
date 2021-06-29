@@ -1,0 +1,16 @@
+<div class="content">
+    <mat-card>
+        <div>
+            <mat-selection-list #cityList>
+                <mat-list-option *ngFor="let city of cities" [selected]="city.selected" 
+                (click)="onAreaListControlChanged(cityList)" [value]="city.name">
+                {{city.name}}
+                </mat-list-option>
+            </mat-selection-list>
+        </div>
+
+        <div class="search-button-div" >
+            <button class="search-button" mat-raised-button color="primary" (click)="searchWeather()">Search</button>
+        </div>
+    </mat-card>
+</div>

@@ -1,0 +1,15 @@
+
+.content{
+    margin: 0;
+    padding: 20px;
+}
+.mat-card{
+    width: 80%;
+    margin: 0 auto;
+}
+.search-button{
+    margin: 20px;
+}
+.search-button-div{
+    text-align: center;
+ }

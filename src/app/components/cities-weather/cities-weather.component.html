@@ -1,0 +1,51 @@
+<div class="content">
+
+    <div>
+      <app-search-filter (newItemEvent)="filterResult($event)"></app-search-filter>
+    </div>
+    <div>
+      <mat-toolbar  *ngIf="!hasData">
+        <span class="no-data-found"> OOps! there are no results for your search.</span>
+      </mat-toolbar>
+    </div>
+
+        <div class="grid" *ngIf="hasData">
+          <div class="mat-Grid-Div" *ngFor="let weather of filteredCitiesWeatherGrid">
+            <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>{{weather.name}}</mat-card-title>
+              <mat-card-subtitle>{{weather.sys.country}}</mat-card-subtitle>
+              <mat-card-subtitle>{{weather.weather[0].description}}</mat-card-subtitle>
+            </mat-card-header>
+            
+            <mat-card-content>
+              <p>
+                <span>Humidity :</span>
+               <span>{{weather.main.humidity}}</span>
+              </p>
+              <p>
+                <span>Visibility :</span>
+               <span>{{weather.visibility}}</span>
+              </p>
+              <p>
+                <span>Pressure :</span>
+               <span>{{weather.main.pressure}}</span>
+              </p>
+              <p>
+                <span>Temperature :</span>
+               <span>{{weather.main.temp}} ({{weather.main.temp_max}} -{{weather.main.temp_min}} )</span>
+              </p>
+              <p>
+                <span>Wind Speed :</span>
+               <span>{{weather.wind.speed}}</span>
+              </p>
+              
+              
+              
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      
+    
+</div>

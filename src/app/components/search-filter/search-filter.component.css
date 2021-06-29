@@ -1,0 +1,17 @@
+.input-div-wrapper{
+    text-align: center;
+    width: 100%;
+}
+.input-div
+{
+    margin: 0 auto;
+}
+.text-input{
+    max-width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.search-button{
+    margin-left: 10px;
+}

@@ -42,8 +42,3 @@ Run the below command to run the application
 ```npm install```
 
 ```ng serve``` 
-
-
-
-
-

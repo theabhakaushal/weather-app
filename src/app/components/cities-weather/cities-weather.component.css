@@ -1,0 +1,22 @@
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mat-figure{
+    height: 70%;
+}
+.content{
+    margin: 0;
+    padding: 20px;
+}
+.example-card {
+    max-width: 400px;
+    margin: 10px;
+  }
+.no-data-found{
+    text-align: center;
+    width: 100%;
+    font-size: 0.7em;
+  }
+ 
