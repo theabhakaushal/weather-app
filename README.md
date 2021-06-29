@@ -1,4 +1,4 @@
-# weather-app
+# Weather-app
 
 
 ## About the application and features implemented:
